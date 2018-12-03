@@ -177,6 +177,14 @@ if (!function_exists( 'devdmbootstrap_scripts' ) ) {
         // Enqueue the default Bootstrap 4.x JS with the name devdmbootstrap4-js.
         wp_enqueue_script('devdmbootstrap4-js', get_template_directory_uri() . '/assets/js/bootstrap4x/bootstrap.js', array('jquery'), $wpTheme->get( 'Version' ), true);
 
+        //Enqueue GSAP
+        wp_enqueue_script('gsap-js', 'https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.2/TweenMax.min.js');
+
+        //Enqueue Scrollmagic
+        wp_enqueue_script('scrollmagic-js', '//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.6/ScrollMagic.min.js');
+        wp_enqueue_script('scrollmagic-animation-js', get_template_directory_uri() .'/assets/js/animation.gsap.js');
+        //wp_enqueue_script('scrollmagic-indicators-js', '//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.6/plugins/debug.addIndicators.min.js');
+
         // Enqueue comment-reply
         if ( is_singular() && comments_open() && get_option('thread_comments') ) {
             wp_enqueue_script( 'comment-reply' );

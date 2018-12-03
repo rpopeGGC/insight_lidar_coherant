@@ -15,14 +15,18 @@ if(get_sub_field('infographic_text')){
 	$infographic_text = get_sub_field('infographic_text');
 }
 
+if(get_sub_field('infographic_block_class')){
+	$infographic_class = get_sub_field('infographic_block_class');
+}
+
 
 ?>
 
-<div class="infographic_block">
+<div class="infographic_block" id="<?php echo $infographic_class; ?>">
 	<div class="container">
 		<div class="row">
 			<?php if(isset($headline) ): ?>
-
+				<div id="trigger<?php echo $infographic_class; ?>"></div>
 					<div class="col-md-5">
 						<div class="headline">
 							<h2 style="color: <?php echo $block_color;?>"><?php echo $headline; ?></h2>
