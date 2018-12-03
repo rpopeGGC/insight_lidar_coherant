@@ -1,0 +1,186 @@
+/*
+Theme Name: devdmbootstrap4
+Theme URI: https://devdmbootstrap.com
+Author: Danny Machal
+Author URI: https://devdm.com/
+Description: A no frills theme for Developers using Twitter Bootstrap 4.
+Version: 1.71
+License: GNU General Public License v3 or later
+License URI: http://www.gnu.org/licenses/gpl-3.0.html
+Tags: one-column, two-columns, right-sidebar, custom-header, custom-menu, editor-style, featured-images, sticky-post, translation-ready
+Text Domain: devdmbootstrap4
+GitHub Theme URI: https://github.com/dannymachal/devdmbootstrap4
+
+This theme, like WordPress, is licensed under the GPL.
+Use it to make something cool, have fun, and share what you've learned with others.
+
+The default Bootstrap 4 CSS and JS files are enqueued inside the functions.php file with the handles devdmbootstrap4-css and devdmbootstrap4-js
+*/
+
+.gallery-caption {}
+
+.bypostauthor {}
+
+body{
+  color: #85889b;
+  font-family: 'Muli';
+  font-size: 19px;
+  line-height: 22px;
+  font-weight: 300;
+}
+
+body, html{
+  width: 100%;
+  height: 100%;
+}
+
+h1, h2, h3, h4{
+  font-family: 'Roboto';
+}
+
+@media (min-width: 1400px){
+  .container {
+    max-width: 1440px !important;
+  }
+
+  .container-fluid {
+    width: 100% !important;
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+  }
+}
+.container-fluid {
+  width: 100% !important;
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+}
+
+/* content blocks */
+.text-col img{
+  width: 100%;
+  height: auto;
+}
+
+.two-col-text-img-block h2{
+  color: #00bbef;
+  font-size: 44px;
+  margin-top: 44px;
+  margin-bottom: 24px;
+  font-family: 'Roboto';
+}
+
+.two-col-text-img-block{
+  border-bottom: 8px solid #333;
+  padding-bottom: 64px;
+}
+
+.marquee-image{
+  position: relative;
+  max-height: 100% !important;
+  overflow: hidden;
+  background-position: center center;
+  border-bottom: 6px solid #333;
+}
+
+.marquee-image .overlay{
+  position: absolute;
+  top: 45%;
+  width: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%)
+
+}
+
+.marquee-image .overlay h1,
+.marquee-image .overlay h2,
+.marquee-image .overlay h3,
+.marquee-image .overlay p,
+.marquee-image .overlay ul li{
+  color: #fff;
+}
+
+.marquee-image h1{
+  font-family: 'Montserrat';
+  text-transform: uppercase;
+  text-align: center;
+  width: 100%;
+}
+
+.marquee-image h2{
+  font-family: 'Montserrat';
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 23px;
+  text-align: right;
+  letter-spacing: 4px;
+  margin-right: 5%;
+}
+
+.infographic_block{
+  border-bottom: 2px solid #999;
+  padding: 64px 0px 64px 0;
+  position: relative;
+}
+
+.infographic_block p{
+    line-height: 32px;
+    font-size: 19px;
+}
+
+.infographic_block h2{
+  font-family: "Montserrat";
+  letter-spacing: 4px;
+  text-transform: uppercase;
+  max-width: 60%;
+  text-align: center;
+  margin: 10px auto !important;
+  font-size: 1.8rem;
+}
+
+.infographic_block .headline{
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 100%;
+}
+
+@media only screen and (max-width: 991px) {
+  .infographic_block h2{
+    position: relative !important;
+    transform: translateY(-100%);
+  }
+
+  .marquee-image img{
+    max-width: unset !important;
+    height: unset !important;
+    object-fit: cover !important;
+    margin-left: -45%;
+  }
+
+  .infographic_block .headline{
+    position: relative;
+    top: 50%;
+    width: 100% !important;
+  }
+
+  .infographic_block .headline h2{
+    max-width: 100% !important;
+    transform: translateY(0);
+  }
+
+}
+
+.infographic_block .divider{
+  width: 20%;
+  height: 8px;
+  display: block;
+  margin: auto;
+
+}
+
+.footer{
+  background-image: url('/wp-content/uploads/2018/12/insight_02.jpg');
+  background-size: cover;
+  background-position: center center;
+  min-height: 212px;
+}
